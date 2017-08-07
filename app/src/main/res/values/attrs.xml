@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingView">
+        <!--正常状态下的资源-->
+        <attr name="starNormal" format="reference"/>
+        <!--选中状态资源-->
+        <attr name="starSelected" format="reference"/>
+        <!--星星数量-->
+        <attr name="starNumbers" format="integer"/>
+        <!--星星之间的间距-->
+        <attr name="starSpace" format="dimension"/>
+    </declare-styleable>
+</resources>
