@@ -52,7 +52,10 @@ public class RatingView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        //控件高度为图片的高度加上上下的padding值
         int height = mStarNormal.getHeight() + getPaddingTop() + getPaddingBottom();
+        //控件的宽高为五张图片的宽度，加上左右的padding值，然后加上每张图片的左边间隔值，这里每张图片都会有一个左边间隔，为了控件美观右边多加了一个间隔
         int width = mStarNormal.getWidth() * mStarNumbers + (mStarNumbers + 1) * mStarSpaceing + getPaddingLeft() + getPaddingRight();
         setMeasuredDimension(width, height);
     }
